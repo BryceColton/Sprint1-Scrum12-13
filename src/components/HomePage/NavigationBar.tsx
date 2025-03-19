@@ -1,5 +1,6 @@
 import React from "react";
 import { HomeIcon, MenuIcon, CloseIcon } from "./Icons";
+import { Link } from "react-router-dom";
 
 export const NavigationBar: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ export const NavigationBar: React.FC = () => {
         </div>
       </div>
       <button aria-label="Menu" className="focus:outline-none">
-        <MenuIcon />
+        <Link to="/Menu"><MenuIcon /></Link>
       </button>
     </nav>
   );

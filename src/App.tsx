@@ -20,6 +20,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Layout />}>
         <Route path='/HomePage' element={<HomePage />} />
+        <Route path='/Menu' element={<NavigationMenu />} />
         <Route path="/login" element={<YouthActivities />} />
         <Route path="/calendar" element={<CalendarView />} />
         <Route path="/activities" element={<ActivityBrowser />} />
