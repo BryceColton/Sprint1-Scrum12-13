@@ -8,7 +8,7 @@ import { TimeSelector } from "./TimeSelector";
 import { FloatingActionButton } from "./FloatingActionButton";
 import { BottomSheetIndicator } from "./BottomSheetIndicator";
 
-export default function CalendarView() {
+export function CalendarView() {
   return (
     <main className="w-full bg-white min-h-[screen]">
       <StatusBar />

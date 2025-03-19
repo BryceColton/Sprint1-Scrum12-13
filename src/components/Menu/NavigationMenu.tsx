@@ -5,7 +5,7 @@ import { BackButton } from "./BackButton";
 import { MenuItems } from "./MenuItems";
 import { BottomIndicator } from "./BottomIndicator";
 
-const NavigationMenu: React.FC = () => {
+export const NavigationMenu: React.FC = () => {
   return (
     <>
       <link
@@ -24,4 +24,4 @@ const NavigationMenu: React.FC = () => {
   );
 };
 
-export default NavigationMenu;
+

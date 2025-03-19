@@ -1,5 +1,5 @@
-import { ActivityCard } from "./ActivityDisplayed/ActivityCard";
-import { DropdownIcon } from "./Home Page/Icons";
+import { ActivityCard } from "./ActivityCard";
+import { DropdownIcon } from "./Icons";
 
 export const ActivityGrid = () => {
   return (
