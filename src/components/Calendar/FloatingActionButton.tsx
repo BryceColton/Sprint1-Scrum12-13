@@ -1,4 +1,4 @@
-import { PlusIcon } from "../Home Page/Icons";
+import { PlusIcon } from "../HomePage/Icons";
 
 export const FloatingActionButton = () => {
   return (

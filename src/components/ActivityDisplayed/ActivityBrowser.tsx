@@ -1,5 +1,5 @@
 "use client";
-import { StatusBar } from "../Home Page/StatusBar";
+import { StatusBar } from "../HomePage/StatusBar";
 import { NavigationBar } from "./NavigationBar";
 import { ActivityGrid } from "../ActivityDisplayed/ActivityGrid";
 import { FloatingActionButton } from "../Calendar/FloatingActionButton";

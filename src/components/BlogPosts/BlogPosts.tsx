@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { StatusBar } from "../Home Page/StatusBar";
+import { StatusBar } from "../HomePage/StatusBar";
 import { SearchBar } from "../Calendar/SearchBar";
 import { PostItem } from "./PostItem";
 import { HomeIndicator } from "./HomeIndicator";
