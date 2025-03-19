@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wolaXctmutaTBNzwSZWECpr/djyYU/dsN+OC7ngdf6g=",
+  "Source": "dotnetapp.API",
+  "BasePath": "_content/dotnetapp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
