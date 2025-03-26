@@ -12,7 +12,6 @@ export function YouthActivities() {
         rel="stylesheet"
       />
       <div className="flex flex-col min-h-screen bg-white">
-        <SearchHeader />
         <main className="flex-1 px-4 py-6">
           <h1 className="mb-8 text-3xl font-semibold text-center max-sm:mb-6 max-sm:text-3xl">
             Youth Activities

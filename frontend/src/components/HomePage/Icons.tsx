@@ -59,16 +59,10 @@ export const PlusIcon = () => (
     width="20"
     height="20"
     viewBox="0 0 20 20"
-    fill="none"
+    fill="black" // solid black fill
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M9.99999 4.16669V15.8334M4.16666 10H15.8333"
-      stroke="#F5F5F5"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
+    <path d="M9 4H11V9H16V11H11V16H9V11H4V9H9V4Z" />
   </svg>
 );
 

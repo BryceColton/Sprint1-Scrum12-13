@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const MenuItems: React.FC = () => {
   const menuItems = [
-    { name: "Login", path: "/login" },
+    { name: "Login", path: "/" },
     { name: "Home Page", path: "/HomePage" },
     { name: "Different Activities", path: "/activities" },
     { name: "Calendar", path: "/calendar" },

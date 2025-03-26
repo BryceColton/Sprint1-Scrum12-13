@@ -17,12 +17,11 @@ export const NavigationMenu: React.FC = () => {
         rel="stylesheet"
       />
       <main className="relative w-full h-screen bg-white">
-        <StatusBar />
+        {/* <StatusBar /> */}
         <nav className="relative w-full bg-cyan-600 border-solid border-[3px] border-zinc-400 h-[calc(100vh_-_50px)]">
-        <button onClick={() => navigate(-1)}> {/* Go back one page */}
-            <BackButton />
-        </button>          <MenuItems />
-          <BottomIndicator />
+        <BackButton />
+        <MenuItems />
+          {/* <BottomIndicator /> */}
         </nav>
       </main>
     </>

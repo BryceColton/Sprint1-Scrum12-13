@@ -8,10 +8,6 @@ import { HomeIndicator } from "./HomeIndicator";
 export const BlogPosts: React.FC = () => {
   return (
     <main className="mx-auto w-full bg-white max-w-[480px]">
-      <div className="w-full">
-        <StatusBar />
-        <SearchBar />
-      </div>
       <section className="flex flex-col px-7 pb-96 mt-64 w-full">
         <div>
           <PostItem
@@ -47,7 +43,6 @@ export const BlogPosts: React.FC = () => {
             className="object-contain self-stretch my-auto w-5 aspect-square"
           />
         </button>
-        <HomeIndicator />
       </section>
     </main>
   );
