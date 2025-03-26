@@ -8,10 +8,10 @@ import { BottomIndicator } from "./BottomIndicator";
 export const ActivityBrowser = () => {
   return (
     <main className="flex flex-col bg-white min-h-[screen]">
-      <StatusBar />
+      {/* <StatusBar />
       <div className="mt-12">
         <NavigationBar />
-      </div>
+      </div> */}
       <ActivityGrid />
       <FloatingActionButton />
       <BottomIndicator />
