@@ -11,8 +11,6 @@ import { BottomSheetIndicator } from "./BottomSheetIndicator";
 export function CalendarView() {
   return (
     <main className="w-full bg-white min-h-[screen]">
-      <StatusBar />
-      <SearchHeader />
       <section className="px-16 mt-10">
         <WardCalendarDropdown />
       </section>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\dotnetapp.API.csproj": {}
+    "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\dotnetapp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\dotnetapp.API.csproj": {
+    "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\dotnetapp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\dotnetapp.API.csproj",
+        "projectUniqueName": "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\dotnetapp.API.csproj",
         "projectName": "dotnetapp.API",
-        "projectPath": "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\dotnetapp.API.csproj",
-        "packagesPath": "C:\\Users\\thebi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\obj\\",
+        "projectPath": "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\dotnetapp.API.csproj",
+        "packagesPath": "C:\\Users\\colto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\thebi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\colto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
