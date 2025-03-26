@@ -16,9 +16,11 @@ export const NavigationBar: React.FC = () => {
           </button>
         </div>
       </div>
+      <Link to="/Menu">
       <button aria-label="Menu" className="focus:outline-none">
-        <Link to="/Menu"><MenuIcon /></Link>
+       <MenuIcon />
       </button>
+      </Link>
     </nav>
   );
 };

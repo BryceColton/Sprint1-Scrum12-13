@@ -10,6 +10,7 @@ import { ActivityBrowser } from './components/ActivityDisplayed/ActivityBrowser'
 import { NavigationMenu } from './components/Menu/NavigationMenu'
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
+import { BlogPosts } from './components/BlogPosts/BlogPosts';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Route path="/login" element={<YouthActivities />} />
         <Route path="/calendar" element={<CalendarView />} />
         <Route path="/activities" element={<ActivityBrowser />} />
-        <Route path="/blog" element={<h1>Blog Page</h1>} />
+        <Route path="/blog" element={<BlogPosts />} />
       </Route>
     </Routes>
     </>
