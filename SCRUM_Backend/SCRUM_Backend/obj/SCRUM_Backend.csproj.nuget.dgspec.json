@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/davisherrera/Library/CloudStorage/OneDrive-Personal/Information Systems/IS 401/SCRUM/SCRUM_Backend/SCRUM_Backend/SCRUM_Backend.csproj": {}
+    "C:\\Users\\colto\\onedrive\\desktop\\holder\\cutler\\Scrum-Group-12-13\\SCRUM_Backend\\SCRUM_backend\\SCRUM_Backend.csproj": {}
   },
   "projects": {
-    "/Users/davisherrera/Library/CloudStorage/OneDrive-Personal/Information Systems/IS 401/SCRUM/SCRUM_Backend/SCRUM_Backend/SCRUM_Backend.csproj": {
+    "C:\\Users\\colto\\onedrive\\desktop\\holder\\cutler\\Scrum-Group-12-13\\SCRUM_Backend\\SCRUM_backend\\SCRUM_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/davisherrera/Library/CloudStorage/OneDrive-Personal/Information Systems/IS 401/SCRUM/SCRUM_Backend/SCRUM_Backend/SCRUM_Backend.csproj",
+        "projectUniqueName": "C:\\Users\\colto\\onedrive\\desktop\\holder\\cutler\\Scrum-Group-12-13\\SCRUM_Backend\\SCRUM_backend\\SCRUM_Backend.csproj",
         "projectName": "SCRUM_Backend",
-        "projectPath": "/Users/davisherrera/Library/CloudStorage/OneDrive-Personal/Information Systems/IS 401/SCRUM/SCRUM_Backend/SCRUM_Backend/SCRUM_Backend.csproj",
-        "packagesPath": "/Users/davisherrera/.nuget/packages/",
-        "outputPath": "/Users/davisherrera/Library/CloudStorage/OneDrive-Personal/Information Systems/IS 401/SCRUM/SCRUM_Backend/SCRUM_Backend/obj/",
+        "projectPath": "C:\\Users\\colto\\onedrive\\desktop\\holder\\cutler\\Scrum-Group-12-13\\SCRUM_Backend\\SCRUM_backend\\SCRUM_Backend.csproj",
+        "packagesPath": "C:\\Users\\colto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\colto\\onedrive\\desktop\\holder\\cutler\\Scrum-Group-12-13\\SCRUM_Backend\\SCRUM_backend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/davisherrera/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\colto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -81,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
