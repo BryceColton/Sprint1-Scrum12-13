@@ -8,12 +8,16 @@ export function HomePage() {
 
   return (
     <>
+<<<<<<< HEAD
+        <StatusBar /> 
+        <NavigationBar />
+        <MainContent /> 
+=======
         {/* <StatusBar /> 
         <NavigationBar /> */}
       <MainContent /> 
+>>>>>>> main
 
     </>
   )
 }
-
-
