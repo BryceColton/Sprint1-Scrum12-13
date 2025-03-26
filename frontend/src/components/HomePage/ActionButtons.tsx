@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for routing
 import { PlusIcon } from "./Icons";
 
 const buttonBaseClass =
@@ -7,17 +8,29 @@ const buttonBaseClass =
 export const ActionButtons: React.FC = () => {
   return (
     <div className="flex flex-col gap-4 mt-5 w-full max-w-[266px]">
-      <button className={buttonBaseClass}>Schedule an Activity</button>
+      {/* Wrap buttons with Link component */}
+      <Link to="/calendar">
+        <button className={buttonBaseClass}>Schedule an Activity</button>
+      </Link>
+
       <div className="relative">
-        <button className={buttonBaseClass}>
-          <span>Blog of Activities</span>
-        </button>
+        <Link to="/blog">
+          <button className={buttonBaseClass}>
+            <span>Blog of Activities</span>
+          </button>
+        </Link>
         <div className="absolute -right-11 p-3 rounded-md border border-solid bg-[color:var(--sds-color-background-brand-default)] border-[length:var(--sds-color-border-brand-default)] top-[5px]">
           <PlusIcon />
         </div>
       </div>
-      <button className={buttonBaseClass}>Calendar</button>
-      <button className={buttonBaseClass}>Analytics</button>
+
+      <Link to="/calendar">
+        <button className={buttonBaseClass}>Calendar</button>
+      </Link>
+
+      <Link to="/activities">
+        <button className={buttonBaseClass}>Analytics</button>
+      </Link>
     </div>
   );
 };
