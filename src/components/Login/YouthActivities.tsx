@@ -4,7 +4,7 @@ import { SearchHeader } from "./SearchHeader";
 import { LoginForm } from "./LoginForm";
 import { Footer } from "./Footer";
 
-export default function YouthActivities() {
+export function YouthActivities() {
   return (
     <>
       <link

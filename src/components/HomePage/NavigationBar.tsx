@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeIcon, MenuIcon, CloseIcon } from "./Home Page/Icons";
+import { HomeIcon, MenuIcon, CloseIcon } from "./Icons";
 
 export const NavigationBar: React.FC = () => {
   return (

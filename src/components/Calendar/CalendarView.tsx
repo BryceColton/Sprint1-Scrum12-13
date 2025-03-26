@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { StatusBar } from "../Home Page/StatusBar";
+import { StatusBar } from "../HomePage/StatusBar";
 import { SearchHeader } from "../Login/SearchHeader";
 import { WardCalendarDropdown } from "./WardCalendarDropdown";
 import { CalendarGrid } from "./CalendarGrid";
@@ -8,7 +8,7 @@ import { TimeSelector } from "./TimeSelector";
 import { FloatingActionButton } from "./FloatingActionButton";
 import { BottomSheetIndicator } from "./BottomSheetIndicator";
 
-export default function CalendarView() {
+export function CalendarView() {
   return (
     <main className="w-full bg-white min-h-[screen]">
       <StatusBar />

@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { StatusBar } from "../Home Page/StatusBar";
+import { StatusBar } from "../HomePage/StatusBar";
 import { SearchBar } from "../Calendar/SearchBar";
 import { PostItem } from "./PostItem";
 import { HomeIndicator } from "./HomeIndicator";
 
-const BlogPosts: React.FC = () => {
+export const BlogPosts: React.FC = () => {
   return (
     <main className="mx-auto w-full bg-white max-w-[480px]">
       <div className="w-full">
@@ -53,4 +53,4 @@ const BlogPosts: React.FC = () => {
   );
 };
 
-export default BlogPosts;
+
