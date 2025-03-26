@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { IconEyeOff, IconEye } from "@tabler/icons-react";
-
+import {useNavigate} from 'react-router-dom';
 export function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
-
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -16,12 +17,19 @@ export function LoginForm() {
       [name]: value,
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
+    if (formData.username === "admin" && formData.password === "admin") {
+      // Successful login
+      setError("");
+      alert("Login successful!"); // Replace this with your desired action (e.g., redirect to dashboard)
+      navigate('/HomePage');
+    } else {
+      // Failed login
+      setError("Invalid username or password");
+    }
   };
-
   return (
     <form
       onSubmit={handleSubmit}
