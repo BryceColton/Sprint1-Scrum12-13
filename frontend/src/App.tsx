@@ -18,10 +18,10 @@ function App() {
   return (
     <>
       <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route element={<Layout />}>
         <Route path='/HomePage' element={<HomePage />} />
         <Route path='/Menu' element={<NavigationMenu />} />
-        <Route path="/login" element={<YouthActivities />} />
+        <Route path="/" element={<YouthActivities />} />
         <Route path="/calendar" element={<CalendarView />} />
         <Route path="/activities" element={<ActivityBrowser />} />
         <Route path="/blog" element={<BlogPosts />} />
