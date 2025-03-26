@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\",
+  "WorkspaceRootPath": "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{763CC114-194B-4396-BDA7-7200B87C3713}|dotnetapp.API.csproj|c:\\users\\thebi\\downloads\\sprint1-scrum12-13-main\\backend\\dotnetapp.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{763CC114-194B-4396-BDA7-7200B87C3713}|dotnetapp.API.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +14,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\thebi\\Downloads\\Sprint1-Scrum12-13-main\\backend\\dotnetapp.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\colto\\OneDrive\\Desktop\\holder\\cutler\\Scrum-Group-12-13\\backend\\dotnetapp.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T20:24:51.673Z",
+              "WhenOpened": "2025-03-26T15:06:49.258Z",
               "EditorCaption": ""
             }
           ]
