@@ -10,7 +10,7 @@ export function HomePage() {
     <>
         <StatusBar /> 
         <NavigationBar />
-      <MainContent /> 
+        <MainContent /> 
 
     </>
   )
