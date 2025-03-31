@@ -6,9 +6,8 @@ import { StatusBar } from "./StatusBar";
 export function HomePage() {
   return (
     <>
-      <StatusBar />
-      <NavigationBar />
-      <MainContent />
+        <MainContent /> 
+
     </>
-  );
+  )
 }
