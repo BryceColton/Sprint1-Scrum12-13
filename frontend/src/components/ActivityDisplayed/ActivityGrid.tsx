@@ -44,7 +44,8 @@ export const ActivityGrid = ({
         "Join our weekly soccer matches! All skill levels welcome. Bring your cleats and water bottle.",
     },
     {
-      imageUrl: "",
+      imageUrl:
+        "https://hips.hearstapps.com/hmg-prod/images/best-board-games-for-kids-team-digger-659491f9bd8cf.jpeg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
       title: "Board Games",
       category: "Social",
       description:
