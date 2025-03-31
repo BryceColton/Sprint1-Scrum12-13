@@ -17,34 +17,19 @@ export function NewLoginForm() {
       [name]: value,
     }));
   };
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-  
-    try {
-      const response = await fetch("http://localhost:5000/api/users/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      if (!response.ok) {
-        const data = await response.json();
-        setError(data.message || "Login failed");
-        return;
-      }
-  
-      const result = await response.json();
-      alert(result.message);
+    // Handle login logic here
+    if (formData.username === "admin" && formData.password === "admin") {
+      // Successful login
       setError("");
-      navigate("/HomePage");
-    } catch (err) {
-      setError("An error occurred. Please try again.");
-      console.error(err);
+      alert("Login successful!"); // Replace this with your desired action (e.g., redirect to dashboard)
+      navigate('/HomePage');
+    } else {
+      // Failed login
+      setError("Invalid username or password");
     }
   };
-  
   return (
     <form
       onSubmit={handleSubmit}
