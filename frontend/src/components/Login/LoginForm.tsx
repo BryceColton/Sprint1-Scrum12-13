@@ -17,19 +17,35 @@ export function LoginForm() {
       [name]: value,
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle login logic here
-    if (formData.username === "admin" && formData.password === "admin") {
-      // Successful login
-      setError("");
-      alert("Login successful!"); // Replace this with your desired action (e.g., redirect to dashboard)
-      navigate('/HomePage');
-    } else {
-      // Failed login
-      setError("Invalid username or password");
+    setError(""); // Clear previous errors
+  
+    try {
+      const response = await fetch("https://localhost:5000/api/Users/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData), // { username: "...", password: "..." }
+      });
+  
+      if (!response.ok) {
+        const data = await response.json();
+        setError(data.message || "Login failed");
+        return;
+      }
+  
+      const result = await response.json();
+      alert(result.message || "Login successful!");
+      navigate("/HomePage");
+    } catch (error) {
+      console.error("Login error:", error);
+      setError("Something went wrong. Please try again.");
     }
   };
+  
+  
   return (
     <form
       onSubmit={handleSubmit}
