@@ -20,6 +20,7 @@ export const ActivityBrowser = () => {
       <ActivityGrid showAddForm={showAddForm} setShowAddForm={setShowAddForm} />
       <FloatingActionButton onClick={() => setShowAddForm(true)} />
       <BottomIndicator />
+      {/* checking if github working */}
     </main>
   );
 };
