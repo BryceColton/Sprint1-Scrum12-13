@@ -3,6 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SCRUM_Backend.Data;
+using SCRUM_Backend.Models;
+
 // Add your namespace here, e.g.:
 // using SCRUM_Backend.Models;
 

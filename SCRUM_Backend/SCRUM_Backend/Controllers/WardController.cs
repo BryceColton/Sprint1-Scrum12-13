@@ -2,6 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using SCRUM_Backend.Models;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SCRUM_Backend.Data;
+using SCRUM_Backend.Models;
 
 namespace SCRUM_Backend.Controllers
 {

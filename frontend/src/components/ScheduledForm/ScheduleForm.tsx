@@ -36,7 +36,7 @@ export function ScheduleActivityForm() {
           scheduledBy: parseInt(formData.scheduledBy),
           scheduledTime: formData.scheduledTime,
           location: formData.location,
-          userId: parseInt(formData.userId), // <-- send userId to backend
+          userId: 1, // <-- send userId to backend
         }),
       });
 

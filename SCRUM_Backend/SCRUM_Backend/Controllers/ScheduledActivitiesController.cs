@@ -2,6 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using SCRUM_Backend.Data;
 using SCRUM_Backend.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SCRUM_Backend.Data;
+using SCRUM_Backend.Models;
 
 namespace SCRUM_Backend.Controllers
 {
@@ -25,8 +29,10 @@ namespace SCRUM_Backend.Controllers
                 ActivityId = request.ActivityId,
                 ScheduledBy = request.ScheduledBy,
                 ScheduledTime = request.ScheduledTime,
-                Location = request.Location
+                Location = request.Location,
+                UserId = request.UserId
             };
+
 
             _context.ScheduledActivities.Add(activity);
             await _context.SaveChangesAsync();

@@ -4,7 +4,9 @@
     "\\bin",
     "\\Controllers",
     "\\Data",
-    "\\Models"
+    "\\Models",
+    "\\Properties"
   ],
+  "SelectedNode": "\\Controllers\\ScheduledActivitiesController.cs",
   "PreviewInSolutionExplorer": false
 }
