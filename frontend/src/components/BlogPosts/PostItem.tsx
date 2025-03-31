@@ -1,5 +1,5 @@
 import React from "react";
-import { ActionButtons } from "../HomePage/ActionButtons";
+import { ActionButtons } from "./ActionButtons";
 
 interface PostItemProps {
   avatarUrl: string;
