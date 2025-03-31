@@ -9,22 +9,15 @@ public class ScheduledActivity
     [Key]
     [Column("schedule_id")]
     public int ScheduleId { get; set; }
-
     [Column("activity_id")]
     public int ActivityId { get; set; }
-
     [Column("scheduled_by")]
     public int ScheduledBy { get; set; }
-
     [Column("scheduled_time")]
     public DateTime ScheduledTime { get; set; }
-
     [Column("location")]
     public string Location { get; set; } = null!;
 
-    [ForeignKey("User")]
-    [Column("user_id")]
-    public int UserId { get; set; }
-
+    public Activity? Activity { get; set; }
     public User? User { get; set; }
 }

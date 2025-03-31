@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SCRUM_Backend.Data;
@@ -24,20 +22,5 @@ namespace SCRUM_Backend.Controllers
         {
             return await _context.Users.ToListAsync();
         }
-
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest login)
-        {
-            var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Username == login.Username && u.Password == login.Password);
-
-            if (user == null)
-            {
-                return Unauthorized(new { message = "Invalid username or password" });
-            }
-
-            return Ok(new { message = "Login successful", userId = user.UserId });
-        }
-
     }
 }
