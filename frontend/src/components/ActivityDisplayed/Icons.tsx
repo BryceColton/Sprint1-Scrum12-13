@@ -54,17 +54,18 @@ export const CloseIcon = () => (
   </svg>
 );
 
-export const PlusIcon = () => (
+export const PlusIcon = ({ className }: { className?: string }) => (
   <svg
-    width="20"
-    height="20"
+    width="40"
+    height="40"
     viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className} // Add this line
   >
     <path
       d="M9.99996 4.16669V15.8334M4.16663 10H15.8333"
-      stroke="#F5F5F5"
+      stroke="blue" // Changed from #F5F5F5 to currentColor
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

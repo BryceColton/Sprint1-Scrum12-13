@@ -3,17 +3,12 @@ import { MainContent } from "./MainContent";
 import { NavigationBar } from "./NavigationBar";
 import { StatusBar } from "./StatusBar";
 
-
 export function HomePage() {
-
   return (
     <>
-        <StatusBar /> 
-        <NavigationBar />
-      <MainContent /> 
-
+      <StatusBar />
+      <NavigationBar />
+      <MainContent />
     </>
-  )
+  );
 }
-
-
