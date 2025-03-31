@@ -1,6 +1,6 @@
-"use client";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { CloseIcon } from "./Icons";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 interface ActivityDetailsModalProps {
   activity: {
@@ -11,17 +11,24 @@ interface ActivityDetailsModalProps {
   };
   onClose: () => void;
 }
+const buttonBaseClass =
+  "w-full text-sm text-white rounded-md border border-black border-solid bg-[linear-gradient(180deg,#017BA3_0%,#025E7C_52%,#017BA3_100%)] h-[54px]";
 
 export const ActivityDetailsModal = ({
   activity,
   onClose,
 }: ActivityDetailsModalProps) => {
+  const navigate = useNavigate(); // Initialize navigation function
+
+  const handleScheduleClick = () => {
+    navigate("/scheduleForm"); // Navigate directly to /scheduleForm
+  };
+
   return (
     <div
       className="fixed inset-0 flex items-center justify-center z-[1000]"
       onClick={onClose}
     >
-      {/* Semi-transparent overlay removed */}
       <div
         className="bg-white p-6 rounded-lg w-full max-w-sm relative mx-4 border border-gray-200 shadow-xl"
         onClick={(e) => e.stopPropagation()}
@@ -58,10 +65,11 @@ export const ActivityDetailsModal = ({
             )}
           </div>
 
-          {/* Schedule Button with improved styling */}
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-black font-medium py-2 px-4 rounded-lg transition-colors">
-            Schedule This Activity
-          </button>
+          <Link
+            to={`/scheduleForm?activity=${encodeURIComponent(activity.title)}`}
+          >
+            <button className={buttonBaseClass}>Schedule This Activity</button>
+          </Link>
         </div>
       </div>
     </div>
