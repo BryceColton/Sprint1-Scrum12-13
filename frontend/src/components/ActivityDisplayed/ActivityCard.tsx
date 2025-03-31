@@ -1,8 +1,9 @@
 interface ActivityCardProps {
   imageUrl?: string;
   title: string;
+  // Add category if you want to display it on the card
+  // category?: string;
 }
-
 export const ActivityCard = ({ imageUrl, title }: ActivityCardProps) => {
   return (
     <article className="flex flex-col items-center">

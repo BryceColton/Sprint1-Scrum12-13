@@ -1,13 +1,22 @@
 import { PlusIcon } from "./Icons";
 
-export const FloatingActionButton = () => {
+interface FloatingActionButtonProps {
+  onClick: () => void;
+}
+
+export const FloatingActionButton = ({
+  onClick,
+}: FloatingActionButtonProps) => {
   return (
-    <div className="fixed right-5 bottom-[60px]">
+    <div className="fixed right-5 bottom-24 z-[100]">
+      {" "}
+      {/* Changed from bottom-[60px] to bottom-24 */}
       <button
+        onClick={onClick}
         aria-label="Add new activity"
-        className="flex gap-2 justify-center items-center p-3 w-11 h-11 bg-sky-700 rounded-md border border-sky-700"
+        className="flex justify-center items-center p-3 w-12 h-12 bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
       >
-        <PlusIcon />
+        <PlusIcon className="text-white" /> {/* Added text-white class */}
       </button>
     </div>
   );
