@@ -9,11 +9,6 @@ import { CalendarView } from './components/Calendar/CalendarView'
 import { ActivityBrowser } from './components/ActivityDisplayed/ActivityBrowser'
 import { NavigationMenu } from './components/Menu/NavigationMenu'
 import { Routes, Route } from "react-router-dom";
-import { YouthActivities } from "./components/Login/YouthActivities";
-import { HomePage } from "./components/HomePage/HomePage";
-import { CalendarView } from "./components/Calendar/CalendarView";
-import { ActivityBrowser } from "./components/ActivityDisplayed/ActivityBrowser";
-import { NavigationMenu } from "./components/Menu/NavigationMenu";
 import Layout from "./components/Layout";
 import { BlogPosts } from './components/BlogPosts/BlogPosts';
 import { ScheduleActivityForm } from './components/ScheduledForm/ScheduleForm';
