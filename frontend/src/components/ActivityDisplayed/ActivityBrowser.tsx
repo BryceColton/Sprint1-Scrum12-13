@@ -13,10 +13,7 @@ export const ActivityBrowser = () => {
     <main className="flex flex-col bg-white min-h-screen pb-24">
       {" "}
       {/* Increased pb-20 to pb-24 */}
-      <StatusBar />
-      <div className="mt-12">
-        <NavigationBar />
-      </div>
+      <div className="mt-12">{/* <NavigationBar /> */}</div>
       <ActivityGrid showAddForm={showAddForm} setShowAddForm={setShowAddForm} />
       <FloatingActionButton onClick={() => setShowAddForm(true)} />
       <BottomIndicator />
