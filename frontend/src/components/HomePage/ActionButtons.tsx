@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { PlusIcon } from "./Icons";
 
 const buttonBaseClass =
@@ -20,9 +20,6 @@ export const ActionButtons: React.FC = () => {
             <span>Blog of Activities</span>
           </button>
         </Link>
-        <div className="absolute -right-11 p-3 rounded-md border border-solid bg-[color:var(--sds-color-background-brand-default)] border-[length:var(--sds-color-border-brand-default)] top-[5px]">
-          <PlusIcon />
-        </div>
       </div>
 
       <Link to="/calendar">
@@ -30,7 +27,7 @@ export const ActionButtons: React.FC = () => {
       </Link>
 
       <Link to="/activities">
-        <button className={buttonBaseClass}>Analytics</button>
+        <button className={buttonBaseClass}>Activities</button>
       </Link>
     </div>
   );

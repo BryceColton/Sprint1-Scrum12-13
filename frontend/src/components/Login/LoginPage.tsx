@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { LoginForm } from './LoginForm'
-import { Footer } from './Footer'
-import { SearchHeader } from './SearchHeader'
+import { LoginForm } from "./LoginForm";
+import { Footer } from "./Footer";
+import { StatusBar } from "../HomePage/StatusBar";
+import { NavigationBar } from "../HomePage/NavigationBar";
+// Adjust if path differs
+
 export function LoginPage() {
-
   return (
-    <>
-          <SearchHeader />
-            <LoginForm />
+    <div className="min-h-screen flex flex-col justify-between bg-white">
+      {/* Top bars */}
+      <StatusBar />
+      <NavigationBar title="Login" />
 
-        <Footer />
-    </>
-  )
+      {/* Centered login form */}
+      <div className="flex flex-col items-center justify-center flex-grow px-4 py-8">
+        <LoginForm />
+      </div>
+
+      {/* Footer at bottom */}
+      <Footer />
+    </div>
+  );
 }
-
