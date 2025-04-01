@@ -33,7 +33,7 @@ export function NewLoginForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-6 w-full bg-white rounded-lg max-w-[400px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] max-sm:p-5"
+      className="flex p-6 w-full bg-white rounded-lg max-w-[400px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] max-sm:p-5"
     >
       <h2 className="mb-6 text-2xl font-semibold text-center max-sm:text-2xl">
         Sign In
