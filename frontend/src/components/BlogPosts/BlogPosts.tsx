@@ -1,51 +1,112 @@
 "use client";
 import React from "react";
-import { StatusBar } from "../HomePage/StatusBar";
-import { SearchBar } from "../Calendar/SearchBar";
 import { PostItem } from "./PostItem";
-import { HomeIndicator } from "./HomeIndicator";
 
 export const BlogPosts: React.FC = () => {
+  const posts = [
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/women/1.jpg",
+      username: "Sarah Williams",
+      imageUrl: "https://extension.usu.edu/davis/images/Youth-hiking.png",
+      description: "Outdoor hike joint activity was amazing!",
+      likes: 345,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/men/2.jpg",
+      username: "Nate Jones",
+      imageUrl: "https://dcyf.wa.gov/sites/default/files/styles/large/public/2020-12/Youth%20Painting.jpeg?itok=NqF3lWUG",
+      description: "Service project painting the community center.",
+      likes: 632,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/women/3.jpg",
+      username: "Carol Baskin",
+      imageUrl: "https://t3.ftcdn.net/jpg/08/12/10/00/360_F_812100006_yMzZ8g9x5vbXIHaAGtmhx9ngmoCFscSW.jpg",
+      description: "Board Game Night for Mutual was a success!!",
+      likes: 167,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/men/4.jpg",
+      username: "Elder Smith",
+      imageUrl: "https://t3.ftcdn.net/jpg/03/69/67/80/360_F_369678057_6jka7Yy01oBk3TcqHeezRpx1XPVg7284.jpg",
+      description: "Campfire night and testimonies under the stars.",
+      likes: 925,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/women/5.jpg",
+      username: "Sister Johnson",
+      imageUrl: "https://therealfoodacademy.com/oak/files/images/camps/cooking-camps-155.jpg",
+      description: "Young Women’s cook-off was a tasty success!",
+      likes: 164,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/men/6.jpg",
+      username: "Brother Thompson",
+      imageUrl: "https://faze.b-cdn.net/cms/wp-content/uploads/2015/05/Teens-Playing-Volleyball.jpg",
+      description: "Basketball and volleyball night",
+      likes: 394,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/women/7.jpg",
+      username: "Emily Clark",
+      imageUrl: "https://grownandflown.com/wp-content/uploads/2020/11/teens-and-mom-making-Christmas-cookies-.jpg",
+      description: "We baked cookies and decorated treats!",
+      likes: 782,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/men/8.jpg",
+      username: "Jason Lee",
+      imageUrl: "https://i.ytimg.com/vi/gS04XrY5C2M/maxresdefault.jpg",
+      description: "Donuts on a string brought out our competitive side.",
+      likes: 111,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/women/9.jpg",
+      username: "Angela Martinez",
+      imageUrl: "https://brentwoodlib.librarycalendar.com/sites/default/files/2024-01/1000_F_305755082_CqrAGwgEQDmaligbSWwk29AsmHs2icDl.jpg",
+      description: "Karaoke night = loud, proud, and fun!",
+      likes: 552,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/men/10.jpg",
+      username: "James Evans",
+      imageUrl: "https://media.istockphoto.com/id/2168934489/photo/a-young-woman-holding-and-eating-g-a-piece-of-cinnamon-roll.jpg?s=612x612&w=0&k=20&c=UF4vw0t74eKQ11Y3Wk0_XLfwzcgCG4FO-ixRbEovDPE=",
+      description: "Scripture study and cinnamon rolls? Yes please.",
+      likes: 202,
+    },
+    {
+      avatarUrl: "https://randomuser.me/api/portraits/women/11.jpg",
+      username: "Rachel Green",
+      imageUrl: "https://assets.churchofjesuschrist.org/ee/1e/ee1e419abf6aaf755bf1aa636068146a2e0ec311/ee1e419abf6aaf755bf1aa636068146a2e0ec311.jpeg",
+      description: "Temple trip and late-night ice cream run!",
+      likes: 1051,
+    },
+  ];
+
   return (
-    <main className="mx-auto w-full bg-white max-w-[480px]">
-      <section className="flex flex-col px-7 pb-96 mt-64 w-full">
-        <div>
-          <PostItem
-            avatarUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/a63bac4be96a8680860196dee76dcc06e01c298120d559a394f55e903481bc70?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-            username="Sarah Williams"
-            imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/08cce83a58a707d4a9504a71ddadffc99bc13800fdd0b026c01a3c56a273fa83?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-            description="Some pictures from our outdoors hike joint activity"
-          />
-          <div className="mt-64">
+    <main className="w-full bg-white">
+      <div className="max-w-screen-lg mx-auto px-4">
+        <section className="flex flex-col gap-8 py-10 w-full">
+          {posts.map((post, index) => (
             <PostItem
-              avatarUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/9f51ff90f63879fd5326440cb9e0f4a90d785cc8e4b7c9c5134e850291ab7951?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-              username="Nate Jones"
-              imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/2dab1604887e6bb21d95bae1546b3c9fbc52e4aff0b77d68cf62c46f7bb7e0c1?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-              description="Service Project with the Youth!"
+              key={index}
+              avatarUrl={post.avatarUrl}
+              username={post.username}
+              imageUrl={post.imageUrl}
+              description={post.description}
+              likes={post.likes}
             />
-          </div>
-          <div className="mt-64">
-            <PostItem
-              avatarUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/cb5af12d7af6c93cc7d4e98101572ed6f54bdb57852f0e4e6b7f9767a466b7cc?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-              username="Carol Baskin"
-              imageUrl="https://cdn.builder.io/api/v1/image/assets/TEMP/2f6fd8ba01472c1b16ebb0815cddeeb9167fcf4f88b404c6a79f37e7240b2954?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-              description="Fear Factor!"
-            />
-          </div>
-        </div>
-        <button
-          aria-label="Add new post"
-          className="flex overflow-hidden z-10 gap-2 justify-center items-center self-end px-3 mt-0 w-11 h-11 border border-solid bg-zinc-800 border-zinc-800 rounded-[32px]"
-        >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5d47d9f33327c79df95c03bcd39319eecc28a97293c329eb03f1289375ed360c?placeholderIfAbsent=true&apiKey=a80b8b3dbf43404a939a1d1ce97ee8d3"
-            alt="Add"
-            className="object-contain self-stretch my-auto w-5 aspect-square"
-          />
-        </button>
-      </section>
+          ))}
+  
+          <button
+            aria-label="Add new post"
+            className="fixed bottom-10 right-10 z-50 w-14 h-14 rounded-full bg-white border border-black shadow-[0_4px_10px_rgba(0,0,0,0.5)] flex items-center justify-center hover:bg-gray-100 transition"
+          >
+            <span className="text-3xl font-bold text-black leading-none">+</span>
+          </button>
+        </section>
+      </div>
     </main>
   );
+  
 };
-
-

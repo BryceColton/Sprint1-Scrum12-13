@@ -1,28 +1,37 @@
 import React from "react";
-import { HomeIcon, MenuIcon, CloseIcon } from "./Icons";
+import { HomeIcon, MenuIcon } from "./Icons";
 import { Link } from "react-router-dom";
 
-export const NavigationBar: React.FC = () => {
+interface NavigationBarProps {
+  title?: string;
+}
+
+export const NavigationBar: React.FC<NavigationBarProps> = ({ title }) => {
   return (
-    <nav className="flex justify-between items-center px-2.5 w-full bg-[linear-gradient(180deg,#0098C9_0%,#0085B1_9.51%,#007399_37%,#007CA5_55.5%,#008DBB_100%)] h-[47px]">
+    <nav className="relative flex justify-between items-center px-4 w-full h-[58px] bg-[linear-gradient(180deg,#0098C9_0%,#0085B1_9.51%,#007399_37%,#007CA5_55.5%,#008DBB_100%)]">
       <Link to="/HomePage">
-      <button aria-label="Home" className="focus:outline-none">
-        <HomeIcon />
-      </button>
+        <button
+          aria-label="Home"
+          className="p-2 rounded-md focus:outline-none flex items-center justify-center"
+        >
+          <HomeIcon />
+        </button>
       </Link>
 
-      <div className="flex-1 mx-2.5">
-        <div className="flex gap-2 items-center px-4 py-2 bg-white rounded-full">
-          <span className="text-base text-stone-900">Search Activities</span>
-          <button aria-label="Clear search" className="focus:outline-none">
-            <CloseIcon />
-          </button>
-        </div>
-      </div>
+      {title && (
+        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-xl font-medium text-center leading-none">
+        {title}
+      </span>
+      
+      )}
+
       <Link to="/Menu">
-      <button aria-label="Menu" className="focus:outline-none">
-       <MenuIcon />
-      </button>
+        <button
+          aria-label="Menu"
+          className="p-2 rounded-md focus:outline-none flex items-center justify-center"
+        >
+          <MenuIcon />
+        </button>
       </Link>
     </nav>
   );
