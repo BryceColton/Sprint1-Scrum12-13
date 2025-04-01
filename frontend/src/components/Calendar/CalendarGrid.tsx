@@ -1,42 +1,68 @@
-export function CalendarGrid() {
-  return (
-    <section>
-      <header className="flex justify-between items-center mb-2.5">
-        <div className="flex gap-1 items-center">
-          <h2 className="text-lg text-black font-[590]">June 2024</h2>
-          <span className="text-lg text-blue-600">􀆊</span>
-        </div>
-        <div className="flex gap-7">
-          <button aria-label="Previous month" className="text-xl text-blue-600">
-            􀆉
-          </button>
-          <button aria-label="Next month" className="text-xl text-blue-600">
-            􀆊
-          </button>
-        </div>
-      </header>
-      <div className="grid grid-cols-7 gap-4 mb-1 text-sm text-center uppercase font-[590] text-zinc-700 text-opacity-30">
-        {["sun", "mon", "tue", "wed", "thu", "fri", "sat"].map((day) => (
-          <div key={day}>{day}</div>
-        ))}
-      </div>
-      <div className="grid grid-cols-7 gap-2 text-xl text-black">
-        {[
-          2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-          21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-        ].map((day) => (
-          <div
-            key={day}
-            className={`h-11 ${day === 10 ? "text-blue-600" : ""} ${
-              day === 26
-                ? "text-blue-600 rounded-full bg-blue-600 bg-opacity-10"
-                : ""
-            }`}
-          >
-            {day}
-          </div>
-        ))}
-      </div>
-    </section>
+// CalendarView.tsx
+import React, { useEffect, useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import './CustomCalendar.css'; // For your circle highlight style
+
+type CalendarActivity = {
+  category: string;
+  scheduledTime: string;
+  location: string;
+  description: string;
+};
+
+const CalendarView = () => {
+  const [activities, setActivities] = useState<CalendarActivity[]>([]);
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
+  // 👇 Fetch activities once when component mounts
+  useEffect(() => {
+    const fetchActivities = async () => {
+      const res = await fetch('/api/scheduledActivities');
+      const data = await res.json();
+      setActivities(data);
+    };
+
+    fetchActivities();
+  }, []);
+
+  // 👇 Filter events for the selected day
+  const selectedDayActivities = activities.filter(
+    (a) => new Date(a.scheduledTime).toDateString() === selectedDate.toDateString()
   );
-}
+
+  return (
+    <div className="calendar-container">
+      {/* CALENDAR */}
+      <Calendar
+        onClickDay={setSelectedDate}
+        value={selectedDate}
+        tileClassName={({ date }) => {
+          const hasActivity = activities.some(
+            (a) => new Date(a.scheduledTime).toDateString() === date.toDateString()
+          );
+          return hasActivity ? 'highlight-circle' : null;
+        }}
+      />
+
+      {/* EVENT LIST FOR SELECTED DATE */}
+      <div className="event-list">
+        {selectedDayActivities.length === 0 ? (
+          <p>No activities scheduled for this day.</p>
+        ) : (
+          selectedDayActivities.map((a, i) => (
+            <div key={i} className="event-card">
+              <p><strong>Category:</strong> {a.category}</p>
+              <p><strong>Time:</strong> {new Date(a.scheduledTime).toLocaleTimeString()}</p>
+              <p><strong>Location:</strong> {a.location}</p>
+              <p><strong>Description:</strong> {a.description}</p>
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default CalendarView;
+

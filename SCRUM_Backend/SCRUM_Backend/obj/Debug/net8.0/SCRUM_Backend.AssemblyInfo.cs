@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SCRUM_Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0515dc662f1fa3734f66dcb1580175d932ca6654")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7b1eeca30837edfa341353b859054c08f24de9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SCRUM_Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SCRUM_Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
