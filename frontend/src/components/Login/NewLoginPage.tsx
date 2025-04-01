@@ -76,8 +76,10 @@ export function NewLoginForm() {
       </div>
       <button
         type="submit"
-        className="p-3 mb-4 w-full text-base font-medium text-white bg-cyan-600 rounded cursor-pointer border-[none] max-sm:p-2.5 hover:bg-cyan-700 transition-colors"
-      >
+        disabled={false} // force it for testing
+
+        className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full transition-colors"
+        >
         Login
       </button>
       <div className="flex flex-col gap-2 items-center">

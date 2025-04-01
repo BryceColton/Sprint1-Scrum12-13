@@ -90,12 +90,15 @@ export function LoginForm() {
           </button>
         </div>
       </div>
+      <div className="flex justify-center">
       <button
-        type="submit"
-        className="p-3 mb-4 w-full text-base font-medium text-white bg-cyan-600 rounded cursor-pointer border-[none] max-sm:p-2.5 hover:bg-cyan-700 transition-colors"
-      >
-        Login
-      </button>
+          type="submit"
+          className="w-full !bg-[linear-gradient(180deg,#0098C9_0%,#0085B1_9.51%,#007399_37%,#007CA5_55.5%,#008DBB_100%)] hover:!bg-white text-white font-medium py-2 px-4 rounded transition-colors"
+        >
+          Login
+        </button>
+
+      </div>
       <div className="flex flex-col gap-2 items-center">
         <a
           href="#"
