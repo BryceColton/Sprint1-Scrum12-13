@@ -120,7 +120,7 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 interface FormData {
-  activityId: string;
+  activityName: string;
   scheduledBy: string;
   scheduledTime: string;
   location: string;
@@ -133,7 +133,7 @@ export function ScheduleActivityForm() {
   const activityName = searchParams.get("activity") || ""; // Get activity name from URL
 
   const [formData, setFormData] = useState<FormData>({
-    activityId: activityName, // Pre-fill with activity name
+    activityName: activityName, // Pre-fill with activity name
     scheduledBy: "",
     scheduledTime: "",
     location: "",
@@ -156,8 +156,8 @@ export function ScheduleActivityForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          activityId: parseInt(formData.activityId),
-          scheduledBy: parseInt(formData.scheduledBy),
+          activityName: formData.activityName,
+          scheduledBy: formData.scheduledBy,
           scheduledTime: formData.scheduledTime,
           location: formData.location,
           userId: 1, // <-- send userId to backend
@@ -167,7 +167,7 @@ export function ScheduleActivityForm() {
       if (response.ok) {
         alert("Activity scheduled successfully!");
         setFormData({
-          activityId: activityName, // Keep activity name
+          activityName: activityName, // Keep activity name
           scheduledBy: "",
           scheduledTime: "",
           location: "",
@@ -190,8 +190,8 @@ export function ScheduleActivityForm() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
-          name="activityId"
-          value={formData.activityId}
+          name="activityName"
+          value={formData.activityName}
           readOnly // Prevent manual change
           className="px-3 py-2 border border-gray-300 rounded bg-gray-100"
         />

@@ -26,19 +26,19 @@ namespace SCRUM_Backend.Controllers
         {
             var activity = new ScheduledActivity
             {
-                ActivityId = request.ActivityId,
+                ActivityName = request.ActivityName,
                 ScheduledBy = request.ScheduledBy,
                 ScheduledTime = request.ScheduledTime,
                 Location = request.Location,
                 UserId = request.UserId
             };
 
-
             _context.ScheduledActivities.Add(activity);
             await _context.SaveChangesAsync();
 
             return Ok(new { message = "Activity scheduled successfully!", activity.ScheduleId });
         }
+
 
 
     }

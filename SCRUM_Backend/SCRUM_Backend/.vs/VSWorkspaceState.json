@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin",
     "\\Controllers",
     "\\Data",
     "\\Models",
     "\\Properties"
   ],
-  "SelectedNode": "\\Models\\ScheduledActivity.cs",
+  "SelectedNode": "\\church_activities.db",
   "PreviewInSolutionExplorer": false
 }

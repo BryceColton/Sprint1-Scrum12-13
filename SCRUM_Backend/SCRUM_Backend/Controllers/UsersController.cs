@@ -22,5 +22,22 @@ namespace SCRUM_Backend.Controllers
         {
             return await _context.Users.ToListAsync();
         }
+
+        // POST: api/users/login
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest login)
+        {
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Username == login.Username && u.Password == login.Password);
+
+            if (user == null)
+            {
+                return Unauthorized(new { message = "Invalid username or password" });
+            }
+
+            // In a real app, you'd return a token instead.
+            return Ok(new { message = "Login successful", userId = user.UserId });
+        }
+
     }
 }

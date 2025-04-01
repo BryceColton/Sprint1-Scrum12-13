@@ -17,5 +17,5 @@ public class Activity
     public string Category { get; set; } = null!; // 'Spiritual', 'Social', etc.
 
     public ICollection<BlogPost>? BlogPosts { get; set; }
-    public ICollection<ScheduledActivity>? ScheduledActivities { get; set; }
+    //public ICollection<ScheduledActivity>? ScheduledActivities { get; set; }
 }
