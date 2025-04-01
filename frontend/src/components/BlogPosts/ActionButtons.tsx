@@ -1,6 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+const buttonBaseClass =
+  "w-full text-sm text-white rounded-md border border-black border-solid bg-[linear-gradient(180deg,#017BA3_0%,#025E7C_52%,#017BA3_100%)] h-[54px]";
 
 export const ActionButtons: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex items-center justify-between px-2">
       <button aria-label="Like">

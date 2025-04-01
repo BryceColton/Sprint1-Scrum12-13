@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ActionButtons } from "./ActionButtons";
+
 
 interface PostItemProps {
   avatarUrl: string;

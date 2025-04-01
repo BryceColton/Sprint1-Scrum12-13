@@ -4,8 +4,8 @@
     "\\bin",
     "\\Controllers",
     "\\Data",
-    "\\Models"
+    "\\Models",
+    "\\Properties"
   ],
-  "SelectedNode": "\\Controllers\\UsersController.cs",
   "PreviewInSolutionExplorer": false
 }

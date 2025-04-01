@@ -18,6 +18,9 @@ public class ScheduledActivity
     [Column("location")]
     public string Location { get; set; } = null!;
 
+    [Column("user_id")]
+    public int UserId { get; set; }
+
     public Activity? Activity { get; set; }
     public User? User { get; set; }
 }
