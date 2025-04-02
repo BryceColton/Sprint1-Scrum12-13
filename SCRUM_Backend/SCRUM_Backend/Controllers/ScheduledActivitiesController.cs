@@ -2,10 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SCRUM_Backend.Data;
 using SCRUM_Backend.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using SCRUM_Backend.Data;
-using SCRUM_Backend.Models;
+
 
 namespace SCRUM_Backend.Controllers
 {
@@ -39,6 +36,12 @@ namespace SCRUM_Backend.Controllers
             return Ok(new { message = "Activity scheduled successfully!", activity.ScheduleId });
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<ScheduledActivity>>> GetScheduledActivities()
+        {
+            var scheduledActivities = await _context.ScheduledActivities.ToListAsync();
+            return Ok(scheduledActivities);
+        }
 
 
     }

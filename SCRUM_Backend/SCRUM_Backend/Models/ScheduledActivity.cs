@@ -22,4 +22,6 @@ public class ScheduledActivity
     public int UserId { get; set; }
 
     public User? User { get; set; }
+    //[NotMapped]
+    //public object Activity { get; internal set; }
 }
