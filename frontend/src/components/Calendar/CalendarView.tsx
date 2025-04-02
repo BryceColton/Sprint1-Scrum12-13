@@ -15,8 +15,8 @@ export function CalendarView() {
   return (
     <CalendarDataProvider>
       <main className="w-full bg-white min-h-[screen]">
-        <StatusBar />
-        <SearchHeader />
+        {/* <StatusBar />
+        <SearchHeader /> */}
 
         <section className="px-16 mt-10">
           <WardCalendarDropdown />
