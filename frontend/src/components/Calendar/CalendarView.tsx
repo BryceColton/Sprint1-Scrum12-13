@@ -6,8 +6,8 @@ import { SearchHeader } from "../Login/SearchHeader";
 import { WardCalendarDropdown } from "./WardCalendarDropdown";
 import { CalendarGrid } from "./CalendarGrid";
 import { ScheduledActivityList } from "./ScheduledActivityList";
-import { TimeSelector } from "./TimeSelector";
-import { FloatingActionButton } from "./FloatingActionButton";
+// import { TimeSelector } from "./TimeSelector";
+// import { FloatingActionButton } from "./FloatingActionButton";
 import { BottomSheetIndicator } from "./BottomSheetIndicator";
 import { CalendarDataProvider } from "../../context/CalendarDataContext"; // <-- Make sure it's imported
 
@@ -24,11 +24,11 @@ export function CalendarView() {
           <div className="p-4 border border-black border-solid">
             <CalendarGrid /> {/* ✅ now safely inside the provider */}
             <ScheduledActivityList />
-            <TimeSelector />
+            {/* <TimeSelector /> */}
           </div>
         </section>
 
-        <FloatingActionButton />
+        {/* <FloatingActionButton /> */}
         <BottomSheetIndicator />
       </main>
     </CalendarDataProvider>
