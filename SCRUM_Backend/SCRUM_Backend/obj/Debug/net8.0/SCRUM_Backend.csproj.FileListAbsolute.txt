@@ -270,3 +270,9 @@ C:\Users\Jaxon\OneDrive\Desktop\401\Sprint1-Scrum12-13\SCRUM_Backend\SCRUM_Backe
 C:\Users\Jaxon\OneDrive\Desktop\401\Sprint1-Scrum12-13\SCRUM_Backend\SCRUM_Backend\obj\Debug\net8.0\SCRUM_Backend.pdb
 C:\Users\Jaxon\OneDrive\Desktop\401\Sprint1-Scrum12-13\SCRUM_Backend\SCRUM_Backend\obj\Debug\net8.0\SCRUM_Backend.genruntimeconfig.cache
 C:\Users\Jaxon\OneDrive\Desktop\401\Sprint1-Scrum12-13\SCRUM_Backend\SCRUM_Backend\obj\Debug\net8.0\ref\SCRUM_Backend.dll
+C:\Users\colto\onedrive\desktop\holder\cutler\Scrum-Group-12-13\SCRUM_Backend\SCRUM_Backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\colto\onedrive\desktop\holder\cutler\Scrum-Group-12-13\SCRUM_Backend\SCRUM_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\colto\onedrive\desktop\holder\cutler\Scrum-Group-12-13\SCRUM_Backend\SCRUM_Backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\colto\onedrive\desktop\holder\cutler\Scrum-Group-12-13\SCRUM_Backend\SCRUM_Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\colto\onedrive\desktop\holder\cutler\Scrum-Group-12-13\SCRUM_Backend\SCRUM_Backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\colto\onedrive\desktop\holder\cutler\Scrum-Group-12-13\SCRUM_Backend\SCRUM_Backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
